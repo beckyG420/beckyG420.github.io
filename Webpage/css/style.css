@@ -1,0 +1,390 @@
+body {
+	background-color:#3c3c3c;
+}
+h1 {
+	color: white;
+	font-family: Lucida Handwriting;
+	text-align: center;
+}
+h2 {
+	color: white;
+	font-family: Lucida Handwriting;
+	text-align: left;
+}
+h3 {
+	color: white;
+	font-family: Lucida Handwriting;
+	text-align: left;
+}
+p {
+	color: white;
+	font-size: 20px;
+	font-family: Courier New, monospace;
+	text-decoration: bold;
+	text-align: center;
+}
+.three{
+    color: white;
+	font-family: Courier New, monospace;
+	text-decoration: bold;
+	text-align: left;
+}
+.two{
+	color: white;
+	font-family: papyrus;
+	text-decoration: bold;
+	text-align: centre;
+	vertical-align: top;
+    display: inline-block;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+div { 
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  background-color: transparent;
+  color: white;
+  font-family: Lucida Handwriting;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ul.a {
+  list-style-type: circle;
+  color: pink;
+  font-family: Lucida Handwriting;
+} */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: left;
+  border-right:2px solid white;
+  }
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li a {
+  display: block;
+  color: pink;
+  text-align: center;
+  padding: 14px 14px;
+  font-family: Lucida Handwriting;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: pink;
+}
+header {
+  background-color: transparent;
+  padding: 30px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+ .myDiv { 
+  width: 500px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+ .mydiv { 
+  width: 350px;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+/* * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table; */
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.imgcontainer {
+  float: left;
+  height: 100%;
+}
+
+
+/* Styles the thumbnail */
+
+.lightbox img {
+height: 200px;
+width: 50%;
+border: 3px solid pink;
+object-fit: cover;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+margin: 60px 0px 0px 10px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: absolute;
+top: -100%;
+width: 100%;
+background: #3c3c3c;
+border: 3px solid pink;
+width: 50%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 50px;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 3;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+span {
+  display: block;
+}
+.caption-container {
+  background-color: black;
+  color: white;
+  font-family: Lucida Handwriting;
+  padding: 50px 50px;
+  text-align: left;
+  color: white;
+  vertical-align: top;
+  opacity: 3;
+  display: inline;
+}
+.imgblur {
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+}
+.caption-contained {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid pink;
+  background-color: transparent;
+  color: white;
+  font-family: Lucida Handwriting;
+  font-style: bold;
+  text-align: center;
+  display: inline;
+  margin-left: 26px;
+  margin-right: auto;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border-color: pink; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #3c3c3c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: pink;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-color: #3c3c3c;
+  background-color: #3c3c3c;
+  padding: 20px;
+}
+.picdiv {
+  background: url("art.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+#error_message{
+  margin-bottom: 20px;
+  background: white;
+  padding: 0px;
+  text-align: left;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}

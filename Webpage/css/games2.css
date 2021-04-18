@@ -1,0 +1,52 @@
+center {
+		margin-top: 100px;
+	}
+	canvas {
+		margin-top: -5px;
+		border: 5px solid #00FF00;
+		box-shadow: 0 0 50px #00ff0038;
+		cursor: none;
+	}
+	body {
+		background-color: black;
+		overflow: hidden;
+	}
+	p {
+		margin: 0;
+		width: 600px;
+		display: inline-block;
+		font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+		color: #00FF00;
+		font-size: 24px;
+		font-weight: 700;
+		text-shadow: 0 0 10px #00ff00ff;
+	}
+	#pauseOverlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0,0,0,0.5);
+	}
+	#pauseBox {
+		display: none;
+		position: absolute;
+		margin-top: 274px;
+	}
+	#pauseBox p {
+		width: 100vw;
+	}
+	.pauseSymbol {
+		font-size: 45px;
+	}
+	.instructions {
+		font-size: 14px;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
